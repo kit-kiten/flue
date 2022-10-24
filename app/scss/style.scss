@@ -2,6 +2,87 @@
 @import "vars";
 @import "global";
 
+.header{
+    padding: 26px 0 56px;
+    margin-bottom: 56px;
 
+    &__container{
+        max-width: 1815px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        width: 100px;
+        height: 97px;
+    }
+
+    &__menu{
+        &-list{
+            display: flex;
+        }
+
+        &-item + &-item{
+            margin-left: 35px;
+        }
+
+        &-item{
+            color: $green-color;
+            text-transform: uppercase;
+            line-height: 23px;
+            font-weight: 700;
+        }
+    }
+
+    &__phone{
+        line-height: 20px;
+        color: $green-color;
+
+        span{
+            color: #000;
+            font-weight: 700;
+        }
+    }
+
+    &__btn{
+        padding: 0 0 5px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+        border-bottom: 1px dashed $red-color;
+        color: $red-color;
+        text-transform: uppercase;
+    }
+
+    &__social-list{
+        display: flex;
+        align-items: center;
+    }
+
+    &__social-item + &__social-item{
+        margin-left: 16px;
+    }
+
+    &__list{
+        display: flex;
+
+        &-item + &-item{
+            margin-left: 16px;
+        }
+
+        &-link{
+            width: 56px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $grey-color;
+            border-radius: 50px;
+        }
+    }
+}
 
 @import "media";
